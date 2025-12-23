@@ -1,0 +1,4 @@
+#!/bin/bash
+# .zimrc hash: {{ include "dot_zimrc.tmpl" | sha256sum }}
+echo "检测到 .zimrc 变化，正在更新 Zim 模块..."
+zsh ~/.zim/zimfw.zsh install
